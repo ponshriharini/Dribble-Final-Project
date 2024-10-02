@@ -1,0 +1,19 @@
+.carousel-wrapper {
+    width: 100%;
+    padding: 72px 0px;
+    overflow: hidden; 
+    position: relative;
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: auto;
+    gap: 20px; 
+    padding: 10px;
+}
+
+.profile-container::-webkit-scrollbar {
+    display: none; 
+}

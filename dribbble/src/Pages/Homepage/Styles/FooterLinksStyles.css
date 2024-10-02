@@ -1,0 +1,14 @@
+.footer-container{
+    margin: auto;
+}
+
+.footer-links-container{
+    width: 1200px;
+    padding: 0px 32px;
+    margin: auto;
+}
+
+.footer-upper-container{
+    display: flex;
+    justify-content: space-between;
+}

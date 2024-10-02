@@ -1,0 +1,68 @@
+.Footer-Container{
+    background-color: rgb(254, 217, 120);
+    text-align: center;
+    padding: 0px 24px;
+}
+
+.Footer-Content{
+    padding: 120px 0px;
+    max-width: 1652px;
+    display: grid;
+    gap: 26px;
+    margin: auto;
+}
+
+.Footer-Heading{
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 68px;
+    line-height: 72px;
+    font-family: "Source Serif 4", Georgia, serif;
+}
+
+.Footer-Text{
+    max-width: 590px;
+    font-weight: 400;
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 36px;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.Footer-Button{
+    font-weight: 700;
+}
+
+.Link{
+    color: black;
+}
+
+.Footer-Actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media screen and (max-width: 770px){
+    .Footer-Heading{
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+    }
+
+    .Footer-Actions{
+        gap: 15px;
+    }
+
+    .Footer-Text{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .Link{
+        display: inline-block;
+    }
+}
