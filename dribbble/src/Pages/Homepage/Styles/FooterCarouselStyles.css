@@ -3,6 +3,7 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+    background-color: white !important;
 }
 
 .footer-carousel-items {
@@ -24,8 +25,8 @@
 .footer-carousel-card-text{
     margin-top: 12px;
     color: #0d0c22;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .footer-carousel-card-image img{
