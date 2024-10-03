@@ -1,8 +1,8 @@
 import Footer from "./Footer";
 import FooterCarousel from "./FooterCarousel";
-import FooterLinks from "./FooterLinks";
 import Header from "./Header";
 import ProfileCarousel from "./ProfileCarousel";
+import HomeFeed from "./HomeFeed";
 
 function Home() {
     return ( 
@@ -10,9 +10,10 @@ function Home() {
             <Header />
             <ProfileCarousel />
 
+            <HomeFeed />
+
             <Footer />
             <FooterCarousel />
-            <FooterLinks />
         </div> 
      );
 }

@@ -1,0 +1,240 @@
+.home-feed-main-container {
+    padding-top: 33px;
+    padding-bottom: 150px;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+}
+
+.home-feed-title {
+    font-size: 49px;
+    line-height: 56px;
+    padding: 0px 32px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.feed-browse-more{
+    margin-top: 48px;
+    margin-bottom: 20px;
+}
+
+.feed-browse-button {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 18.3px 24px;
+    border-radius: 30px;
+    border: 1.5px solid black;
+}
+
+.feed-card-container {
+    display: inline-block;
+    margin: 18px;
+    text-align: left;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+.feed-card-image{
+    min-width: 100px;
+    max-width: 312px;
+    width: auto;
+    height: 235px;
+    min-height: 100px;
+    position: relative;
+}
+
+/* Start of Card Overlay - Like and Save */
+.feed-card-image:hover .image-overlay {
+    opacity: 0.7;
+}
+
+.feed-card-image:hover .action-buttons, 
+.feed-card-image:hover .overlay-text {
+    opacity: 1;
+    transform: translateY(0); /* Move up into view */
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+    border-radius: 0 0 8px 8px; /* Ensure the gradient follows the border radius */
+}
+
+.overlay-text {
+    position: absolute;
+    font-size: 17px;
+    bottom: 30px;
+    left: 25px;
+    color: white;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    max-width: 167px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.action-buttons {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    gap: 10px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Position outside the view */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.action-buttons button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.action-buttons button svg {
+    width: 16px;
+    height: 16px;
+}
+
+.action-buttons button svg:hover {
+    color: rgb(118, 117, 117);
+}
+/* End of Card Overlay */
+
+.feed-card-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+    opacity: 0.05;
+    z-index: 1;
+    border-radius: 8px; /* Make the gradient follow the border radius */
+    pointer-events: none; /* Prevent the gradient from blocking clicks */
+}
+
+.feed-card-image img, .feed-card-image video {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: 0;
+}
+
+.feed-card-details {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.avatar:hover{
+    cursor: pointer;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 8px;
+
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+    overflow: hidden; /* Hides any overflowing text */
+    text-overflow: ellipsis; /* Displays ellipsis (...) for overflowing text */
+    max-width: 110px; /* Set a maximum width to limit how much text is displayed */
+}
+
+.name:hover{
+    cursor: pointer;
+}
+
+.pro-badge {
+    margin-left: 8px;
+    background-color: rgb(204,205,205);
+    font-size: 11px;
+    padding: 0px 3px;
+    color: white;
+    border-radius: 4px;
+    font-weight: 800;
+    margin-right: auto;
+}
+
+.pro-badge:hover{
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.likes, .views {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    color: #4d4d4d;
+}
+
+.likes{
+    margin-right: 8px;
+}
+
+.likes svg, .views svg {
+    margin-right: 4px;
+    color: rgb(159,159,167);
+}
+
+.likes svg:hover{
+    color: rgb(231, 93, 146);
+    fill: rgb(231, 93, 146);
+    cursor: pointer;
+}
+
+.feed-cards-container{
+    margin: 0px 55px;
+}
+
+@media screen and (max-width: 1200px) {
+    .feed-cards-container{
+        padding: 0px 72px !important;
+    }    
+}
+
+@media screen and (max-width: 768px){
+    .feed-cards-container{
+        padding: 0px 32px !important;
+    }    
+}
+
+@media screen and (max-width: 520px) {
+    .feed-cards-container{
+        margin: 0px !important;
+        padding: 10px !important;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .feed-cards-container{
+        padding: 0px !important;
+    }
+}

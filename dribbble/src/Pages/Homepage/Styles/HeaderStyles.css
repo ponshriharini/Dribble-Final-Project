@@ -6,11 +6,12 @@
     padding: 0 32px;
     max-width: 870px;
     font-weight: 500;
-    font-size: 72px;
+    font-size: 71.5px;
     line-height: 76px;
-    font-family: "Source Serif 4", Georgia, serif;
+    font-family: "HeaderFont", "Source Serif 4", Georgia, serif;
     text-align: center;
     margin: 40px auto 24px;
+    color: black;
 }
 
 .Hero-Subheading{

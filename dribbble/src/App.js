@@ -4,7 +4,9 @@ import { Routes } from 'react-router-dom';
 import Home from "./Pages/Homepage/Components/Home";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import Navbar from './Components/Navbar/Navbar';
+import Navbar from './CommonComponents/Navbar/Navbar';
+import FooterLinks from './CommonComponents/Footer/FooterLinks';
+import "./CommonComponents/FontStyles.css";
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
+        <FooterLinks />
       </BrowserRouter>
     </div>
   );

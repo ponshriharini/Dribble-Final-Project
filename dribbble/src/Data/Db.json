@@ -49,6 +49,7 @@
         "backgroundImage": "https://cdn.dribbble.com/uploads/47181/original/1e3a73a174484bef522b620c401cd00a.mp4?1685645427"
       }
     ],
+
     "designs": [
       {
         "name": "Web Design",
@@ -81,6 +82,225 @@
       {
         "name": "Animation",
         "ImageSrc": "https://cdn.dribbble.com/userupload/16455782/file/still-8b9ba61f3a6397572a4e03a827c61278.png?format=webp&resize=320x240&vertical=center"
+      }
+    ],
+
+    "feed": [
+      {
+        "name": "Oleksandr Plyuto 🇺🇦",
+        "like_count": 108,
+        "view_count": "7.6k",
+        "pro_or_team": "PRO",
+        "caption": "R star (Fast Food Chain)",
+        "source_url": "https://cdn.dribbble.com/userupload/16898978/file/original-0ad224de910b1c392650fc00a538e852.mp4",
+        "profile_url": "https://cdn.dribbble.com/users/517584/avatars/normal/78108e54cf2a76d6bc7948a3a1ff629d.png?1726784443"
+      },
+      {
+          "name": "George Bokhua",
+          "like_count": 62,
+          "view_count": "4.1k",
+          "pro_or_team": "PRO",
+          "caption": "Monotree (Feature Sections)",
+          "source_url": "https://cdn.dribbble.com/userupload/16901286/file/original-50acf23f5aacb8fc1f033357a85005c0.jpg?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/24078/avatars/normal/b995a47ef10412a6054d3133b0f009a8.jpg?1481552676"
+      },
+      {
+          "name": "Gert van Duinen",
+          "like_count": 57,
+          "view_count": "9.3k",
+          "pro_or_team": "PRO",
+          "caption": "Cosmic Radio Logo, Design Template",
+          "source_url": "https://cdn.dribbble.com/userupload/16897128/file/original-4f417d77ceb1a7c5b789bea97f94945e.png?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/13604/avatars/normal/3dda8552f1fb7d68a27c34315336a72f.png?1685810951"
+      },
+      {
+          "name": "Jeremy Vessey",
+          "like_count": 47,
+          "view_count": "7.2k",
+          "pro_or_team": "PRO",
+          "caption": "R star (Fast Food Chain)",
+          "source_url": "https://cdn.dribbble.com/userupload/16888000/file/original-f8fc84aaf06dafc615da0b266b319b48.png?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/111288/avatars/normal/aceadbbd99ebe8cb357039cc36f841d0.png?1604267655"
+      },
+      {
+          "name": "Mihai Dolganiuc",
+          "like_count": 44,
+          "view_count": "5.5k",
+          "pro_or_team": "PRO",
+          "caption": "Monotree (Feature Sections)",
+          "source_url": "https://cdn.dribbble.com/userupload/16899479/file/original-ba3794a30ae00ef084b7150295d9f3ec.png?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/393931/avatars/normal/38775509fbfc5da2f37aee467ef06411.png?1713428282"
+      },
+      {
+          "name": "Afterglow",
+          "like_count": 83,
+          "view_count": "12.5k",
+          "pro_or_team": "TEAM",
+          "caption": "Cosmic Radio Logo, Design Template",
+          "source_url": "https://cdn.dribbble.com/userupload/16891187/file/original-24a998468a199c7a7c1b63754a6d38f5.png?resize=640x480&vertical=center",
+          "profile_url": "https://cdn.dribbble.com/users/6487750/avatars/small/9bfce022a9a629ee36d31ce439020ba2.png?1714974300"
+      },
+      {
+          "name": "Angie Mathot",
+          "like_count": 55,
+          "view_count": "4.7k",
+          "pro_or_team": "PRO",
+          "caption": "R star (Fast Food Chain)",
+          "source_url": "https://cdn.dribbble.com/userupload/16888702/file/original-471690f43e32af87af8534dfdff87455.jpg?resize=640x480&vertical=center",
+          "profile_url": "https://cdn.dribbble.com/users/414979/avatars/small/6a3fb4b20c29dce831a74dc7dbf591c4.png?1695741732"
+      },
+      {
+          "name": "Emote",
+          "like_count": 95,
+          "view_count": "12.9k",
+          "pro_or_team": "TEAM",
+          "caption": "Monotree (Feature Sections)",
+          "source_url": "https://cdn.dribbble.com/userupload/16891178/file/original-b37609d63785ab9092e683d7b1c9ef2c.png?resize=640x480&vertical=center",
+          "profile_url": "https://cdn.dribbble.com/users/970950/avatars/small/99e4a7b3bf179dd023d98ed24e0a8f32.png?1623907697"
+      },
+      {
+          "name": "Heyo",
+          "like_count": 36,
+          "view_count": "1.8k",
+          "pro_or_team": "TEAM",
+          "caption": "Cosmic Radio Logo, Design Template",
+          "source_url": "https://cdn.dribbble.com/userupload/16888254/file/still-b383cfbe858db7e6a2a08c7c77489656.png?resize=640x480&vertical=center",
+          "profile_url": "https://cdn.dribbble.com/users/11502486/avatars/small/a8456497e26e27118763af6fc5b5fbcc.png?1650726363"
+      },
+      {
+          "name": "Lucas Fields",
+          "like_count": 18,
+          "view_count": "727",
+          "pro_or_team": "PRO",
+          "caption": "R star (Fast Food Chain)",
+          "source_url": "https://cdn.dribbble.com/userupload/16891986/file/original-eb2d62e25eeff95ab45c50033280f4dc.png?resize=640x480&vertical=center",
+          "profile_url":"https://cdn.dribbble.com/users/6850340/avatars/small/09e52d7cca4f82c18e68ba67bbaeb1dc.png?1664764970"
+      },
+      {
+          "name": "Odama",
+          "like_count": 146,
+          "view_count": "13.8k",
+          "pro_or_team": "TEAM",
+          "caption": "Monotree (Feature Sections)",
+          "source_url": "https://cdn.dribbble.com/userupload/16903792/file/original-143c12ef2c1adc442b9a0f1424a41cb1.jpg?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/623914/avatars/normal/5c0bfacbf9e6dfbeb239ad3c3735c095.jpg?1698108138"
+      },
+      {
+          "name": "Heyo",
+          "like_count": 26,
+          "view_count": "1.5k",
+          "pro_or_team": "TEAM",
+          "caption": "Cosmic Radio Logo, Design Template",
+          "source_url": "https://cdn.dribbble.com/userupload/16774070/file/original-20a4a09363c1cf647a2a5a5d9cf17a86.jpg?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/1119092/avatars/normal/12ac4308c84fd10c304b937cdf9cd5a9.jpg?1655868362"
+      },
+      {
+          "name": "Plainthing Studio",
+          "like_count": 157,
+          "view_count": "17.3k",
+          "pro_or_team": "TEAM",
+          "caption": "R star (Fast Food Chain)",
+          "source_url": "https://cdn.dribbble.com/userupload/16896883/file/original-61e68624208c772602b9e874a238dda5.png?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/677572/avatars/normal/cd94b72f04f84b0dcf1c1ee3f6bdf2b9.png?1634627780"
+      },
+      {
+          "name": "Lucian Radu",
+          "like_count": 76,
+          "view_count": "5.7k",
+          "pro_or_team": "PRO",
+          "caption": "Monotree (Feature Sections)",
+          "source_url": "https://cdn.dribbble.com/userupload/16897548/file/original-4b2d2c3eef4b5400bfa285276b10f6ad.png?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/1573719/avatars/normal/1b299537341c829ddc968d627aeedf40.png?1610610205"
+      },
+      {
+          "name": "UNOM design",
+          "like_count": 60,
+          "view_count": "4.1k",
+          "pro_or_team": "PRO",
+          "caption": "Cosmic Radio Logo, Design Template",
+          "source_url": "https://cdn.dribbble.com/userupload/16839186/file/original-99a6eb5147c6080daf8158a2c86386d3.png?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/4949363/avatars/normal/606bb85ee728fd3d78bbddf7e70b3901.jpg?1676454777"
+      },
+      {
+          "name": "Anik Deb",
+          "like_count": 49,
+          "view_count": "5.1k",
+          "pro_or_team": "PRO",
+          "caption": "R star (Fast Food Chain)",
+          "source_url": "https://cdn.dribbble.com/userupload/16898089/file/original-2219e7dc8bcaad2aa9ad01deffe0e13f.png?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/62724/avatars/normal/b1d299b425b40e5ed8f8f062d8fbf2f6.png?1627630364"
+      },
+      {
+          "name": "Bato",
+          "like_count": 153,
+          "view_count": "4.4k",
+          "pro_or_team": "TEAM",
+          "caption": "Monotree (Feature Sections)",
+          "source_url": "https://cdn.dribbble.com/userupload/16868906/file/original-d73da5d3f6fb127ab18015de6786ae80.png?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/176248/avatars/normal/aa7ede8ddef8f7468b4ae6666653702b.png?1662497509"
+      },
+      {
+          "name": "Mihai Dolganiuc",
+          "like_count": 138,
+          "view_count": "13.4k",
+          "pro_or_team": "TEAM",
+          "caption": "Cosmic Radio Logo, Design Template",
+          "source_url": "https://cdn.dribbble.com/userupload/16897055/file/original-d1c39937fde161b31388515bb72eb46f.png?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/1154753/avatars/normal/5007779cf836ae527bd53afd68100f8b.jpg?1650712783"
+      },
+      {
+          "name": "Nagual",
+          "like_count": 41,
+          "view_count": "2.7k",
+          "pro_or_team": "PRO",
+          "caption": "R star (Fast Food Chain)",
+          "source_url": "https://cdn.dribbble.com/userupload/16897068/file/original-5a1f31a5cbbb0d16a070f0cc0039a81a.mp4",
+          "profile_url": "https://cdn.dribbble.com/users/17538724/avatars/normal/ae5e5e970548bc260b8729404ed7ff9a.jpeg?1697528413"
+      },
+      {
+          "name": "Doryan Algarra",
+          "like_count": 17,
+          "view_count": "1.7k",
+          "pro_or_team": "PRO",
+          "caption": "Monotree (Feature Sections)",
+          "source_url": "https://cdn.dribbble.com/userupload/16895145/file/original-61d18f8a08173a242b8acacfa805a60a.mp4",
+          "profile_url": "https://cdn.dribbble.com/users/2297167/avatars/normal/88c704079e3a23003d55d3e9e7c1da38.png?1718054969"
+      },
+      {
+          "name": "Vladimir Raksha",
+          "like_count": 113,
+          "view_count": "2k",
+          "pro_or_team": "PRO",
+          "caption": "Cosmic Radio Logo, Design Template",
+          "source_url": "https://cdn.dribbble.com/userupload/16894423/file/original-c60fc890fa371931365324d9abd375ad.png?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/1700393/avatars/normal/4321e40fb501ef264d3c9d9d996ad652.png?1698337873"
+      },
+      {
+          "name": "Apexy Team",
+          "like_count": 41,
+          "view_count": "2k",
+          "pro_or_team": "PRO",
+          "caption": "R star (Fast Food Chain)",
+          "source_url": "https://cdn.dribbble.com/userupload/16872033/file/original-7fdc62c7217f17ed10a62d91b3491a1b.png?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/185738/avatars/normal/2fde0e573f2169b68fb2fa6995c366fe.png?1645461501"
+      },
+      {
+          "name": "Dmitry Dzendo",
+          "like_count": 40,
+          "view_count": "3.9k",
+          "pro_or_team": "PRO",
+          "caption": "Monotree (Feature Sections)",
+          "source_url": "https://cdn.dribbble.com/userupload/16900386/file/original-09a336d94a8b7304f5ab7b0e47a7568e.png?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/642843/avatars/normal/2b39190ace5de8929f1ac4a305208613.png?1725712388"
+      },
+      {
+          "name": "Andrii Kovalchuk🇺🇦",
+          "like_count": 58,
+          "view_count": "5.6k",
+          "pro_or_team": "PRO",
+          "caption": "Cosmic Radio Logo, Design Template",
+          "source_url": "https://cdn.dribbble.com/userupload/16904160/file/original-4998fb5f47168ecc385b39cc88f113d3.png?resize=752x",
+          "profile_url": "https://cdn.dribbble.com/users/12698487/avatars/normal/32d08456769561af3be2335aea0b464c?1659716030"
       }
     ]
 }
