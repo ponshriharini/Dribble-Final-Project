@@ -7,17 +7,24 @@ function Navbar() {
         <div className="navbar-container">
 
             <div className="navbar-links">
-                <a href="#">Find Desginers <FontAwesomeIcon icon={faAngleDown} className="dropdown-arrow"/></a>
-                {/* <div className="dropdown-options">
-                    <a href="#">
-                        <p className="dropdown-header">Designer search</p>
-                        <p className="dropdown-text">Quickly find your next designer</p>
-                    </a>
-                    <a href="#">
-                        <p className="dropdown-header">Post a job</p>
-                        <p className="dropdown-text">The #1 job board for design talent</p>
-                    </a>
-                </div> */}
+                <div className="dropdown">
+                    <div className="dropdown-link">
+                        <a href="#">Find desginers <FontAwesomeIcon icon={faAngleDown} className="dropdown-arrow"/></a>
+                    </div>
+                    <div className="dropdown-options-container">
+                        <div className="dropdown-options">
+                            <a href="#">
+                                <p className="dropdown-header">Designer search</p>
+                                <p className="dropdown-text">Quickly find your next designer</p>
+                            </a>
+                            <a href="#">
+                                <p className="dropdown-header">Post a job</p>
+                                <p className="dropdown-text">The #1 job board for design talent</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <a href="#">Inspiration</a>
                 <a href="#">Jobs</a>
                 <a href="#">Go Pro</a>
