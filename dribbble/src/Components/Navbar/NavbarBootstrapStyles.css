@@ -1,0 +1,187 @@
+.nav-link, .user-actions a{
+    color: #0d0c22;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    padding: 0 16px !important;
+    font-size: 14px;
+    text-decoration: none;
+} 
+
+.navbar .Action-Button-Dark{
+    padding: 14px 25px;
+}
+
+.navbar{
+    background-color: rgb(249,246,243) !important;
+    padding: 0px 30px 0px 15px;
+    height: 100px;
+
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+}
+
+.dropdown-arrow{
+    font-size: 12px;
+}
+
+.dropdown-link{
+    margin: 0;
+}
+
+.search-actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.user-actions{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.user-actions *{
+    margin: 0 2px;
+}
+
+.search-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(110,108,123);
+    font-weight: 100;
+    padding: 0px 15px 0px 25px;
+    background-color: white;
+    border-radius: 30px;
+    border: 4px solid transparent; /* Default Border */
+    box-sizing: border-box;
+    transition: border 0.3s ease; /* Transition for border to make it appear and disappear slowly */
+}
+
+.search-form:hover{
+    border: 4px solid rgb(247,233,240);
+}
+
+.search-form input::placeholder {
+    font-size: 14.5px;
+}
+
+.search-form input{
+    border: none;
+    padding: 8px;
+}
+
+.search-form input:focus{
+  outline: none;
+  box-shadow: none; 
+  border-color: transparent;
+}
+
+.search-form:focus-within {
+    border: 4px solid rgb(247,233,240);
+}
+
+/* To remove the clear button in bootstrap input field  */
+.search-form input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.dropdown a{
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-options-container{
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    padding-top: 30px;
+    z-index: 1000;
+    min-width: 275px;
+}
+
+.dropdown-header{
+    font-size: 16px !important;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.dropdown-text{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.dropdown-options p{
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-options-container, .dropdown-options:hover .dropdown-options-container{
+    display: block;
+}
+
+.dropdown-options{
+    background-color: white;
+    padding: 30px 35px;
+    border-radius: 20px;
+}
+
+.dropdown-option{
+    padding: 10px 0px 10px 0px;
+}
+
+.navbar-logo{
+    flex: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul, .search-actions{
+    flex: 40%;
+}
+
+.search-icon {
+    display: none;
+}
+
+@media screen and (max-width: 1400px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar-logo {
+        flex: none;
+        order: 1; 
+        margin-right: auto; 
+        padding: 0px 16px;
+    }
+
+    .navbar-nav {
+        order: 2; 
+    }
+
+    .search-actions {
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .search-form {
+        display: none;
+    }
+
+    .search-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}

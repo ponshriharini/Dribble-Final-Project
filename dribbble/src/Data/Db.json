@@ -4,87 +4,83 @@
         "name": "Chris Owens",
         "designation": "Creative Director",
         "tags": ["Illustration", "Mobile", "UI"],
-        "backgroundImage": "../Assets/Profiles/Profile1.jpeg"
+        "backgroundImage": "https://cdn.dribbble.com/uploads/47180/original/1def7b9fb30832c4af4353b325d9c3af.mp4?1685645402"
       },
       {
         "name": "Aurélien Salomon",
         "designation": "Design Director",
         "tags": ["Mobile", "Product", "UX"],
-        "backgroundImage": "../Assets/Profiles/Profile2.png"
+        "backgroundImage": "https://cdn.dribbble.com/uploads/47175/original/1fb34610061a95a007ac5e7b1dc53138.jpeg?1685645183&format=webp&resize=546x680&vertical=center"
+      },
+      {
+        "name": "Danielle Bufa",
+        "designation": "Digital Designer",
+        "tags": ["Brand", "Design"],
+        "backgroundImage": "https://cdn.dribbble.com/uploads/47171/original/daniele-buffa-3.png?1689174763&format=webp&resize=546x680&vertical=center"
       },
       {
         "name": "Vladimir Gruev",
         "designation": "Digital Designer",
         "tags": ["Brand", "Design"],
-        "backgroundImage": "../Assets/Profiles/Profile3.mp4"
-      },
-      {
-        "name": "Vladimir Gruev",
-        "designation": "Digital Designer",
-        "tags": ["Brand", "Design"],
-        "backgroundImage": "../Assets/Profiles/Profile4.png"
+        "backgroundImage": "https://cdn.dribbble.com/uploads/47173/original/Vladimir_Gruev.png?1689174896&format=webp&resize=546x680&vertical=center"
       },
       {
         "name": "Mercedes Bazan",
         "designation": "Illustrator",
         "tags": ["Graphic Design", "Illustration"],
-        "backgroundImage": "../Assets/Profiles/Profile5.png"
+        "backgroundImage": "https://cdn.dribbble.com/uploads/47178/original/mercedes-bazan.png?1689174566&format=webp&resize=546x680&vertical=center"
       },
       {
         "name": "Elif Kameşoğlu",
         "designation": "Brand Designer",
         "tags": ["Brand", "Illustration", "Web"],
-        "backgroundImage": "../Assets/Profiles/Profile6.jpeg"
+        "backgroundImage": "https://cdn.dribbble.com/uploads/47179/original/35d07cfebd303e05e688078015da0cc2.mp4?1685645373"
       },
       {
         "name": "Victa Wille",
         "designation": "Digital Designer",
         "tags": ["Mobile", "UI", "Web"],
-        "backgroundImage": "../Assets/Profiles/Profile7.jpeg"
+        "backgroundImage": "https://cdn.dribbble.com/uploads/47172/original/d85ae8c7db2421e9a01ecac942978d4b.png?1685645079&format=webp&resize=546x680&vertical=center"
       },
       {
         "name": "Jesse Showalter",
         "designation": "Design Educator",
         "tags": ["UI", "Web", "Mobile"],
-        "backgroundImage": "../Assets/Profiles/Profile8.mp4"
+        "backgroundImage": "https://cdn.dribbble.com/uploads/47181/original/1e3a73a174484bef522b620c401cd00a.mp4?1685645427"
       }
     ],
     "designs": [
       {
         "name": "Web Design",
-        "ImageSrc": "../Assets/Designs/Design1.png"
-      },
-      {
-        "name": "Design",
-        "ImageSrc": "../Assets/Designs/Design2.png"
+        "ImageSrc": "https://cdn.dribbble.com/userupload/16452205/file/original-114536af3a7204d5c3d07990cb0c764a.png?format=webp&resize=320x240&vertical=center"
       },
       {
         "name": "Poster",
-        "ImageSrc": "../Assets/Designs/Design3.webp"
+        "ImageSrc": "https://cdn.dribbble.com/userupload/16086080/file/original-c5b8230ecdc5a1ef3decb0cc5bc7da54.png?format=webp&resize=320x240&vertical=center"
       },
       {
         "name": "Branding",
-        "ImageSrc": "../Assets/Designs/Design4.webp"
+        "ImageSrc": "https://cdn.dribbble.com/userupload/16305659/file/original-c7758f4192a1e0b4b721351fef094ad6.jpg?format=webp&resize=320x240&vertical=center"
       },
       {
         "name": "Print",
-        "ImageSrc": "../Assets/Designs/Design5.webp"
+        "ImageSrc": "https://cdn.dribbble.com/userupload/16116505/file/original-f2caa5da0b7f7f4c7c64a233d1a28723.png?format=webp&resize=320x240&vertical=center"
       },
       {
         "name": "Product Design",
-        "ImageSrc": "../Assets/Designs/Design6.webp"
+        "ImageSrc": "https://cdn.dribbble.com/userupload/16439366/file/original-fe0661cecb3f5f91a38b94d69a1bfeca.jpg?format=webp&resize=320x240&vertical=center"
       },
       {
         "name": "Mobile",
-        "ImageSrc": "../Assets/Designs/Design7.webp"
+        "ImageSrc": "https://cdn.dribbble.com/userupload/16493099/file/original-d2fa4928230371433cf36608375c85e8.png?format=webp&resize=320x240&vertical=center"
       },
       {
         "name": "Illustration",
-        "ImageSrc": "../Assets/Designs/Design8.webp"
+        "ImageSrc": "https://cdn.dribbble.com/userupload/16461003/file/original-40da9caebd81c1495a21ba884dae678e.png?format=webp&resize=320x240&vertical=center"
       },
       {
         "name": "Animation",
-        "ImageSrc": "../Assets/Designs/Design9.webp"
+        "ImageSrc": "https://cdn.dribbble.com/userupload/16455782/file/still-8b9ba61f3a6397572a4e03a827c61278.png?format=webp&resize=320x240&vertical=center"
       }
     ]
 }

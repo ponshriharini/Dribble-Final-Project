@@ -1,7 +1,7 @@
 import "../Styles/ProfileCardStyles.css";
 
 function ProfileCard({ name, designation, tags, backgroundImage }) {
-    const isVideo = backgroundImage.endsWith(".mp4");
+    const isVideo = backgroundImage.includes(".mp4");
 
     return (
         <div className="profile-card">
