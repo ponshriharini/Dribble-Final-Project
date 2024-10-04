@@ -1,0 +1,20 @@
+.input-box .input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1.5px solid #e7e7e9;
+    box-sizing: border-box;
+    margin: 3px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.input-box .input:hover {
+    box-shadow: 0 0 0 4px rgba(249, 194, 240, 0.5); 
+}
+
+.input-box .input:focus {
+    border: 1.5px solid rgb(249,194,240); 
+    box-shadow: 0 0 0 4px rgba(249, 194, 240, 0.5);
+    outline: none; 
+}

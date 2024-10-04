@@ -302,6 +302,12 @@
           "source_url": "https://cdn.dribbble.com/userupload/16904160/file/original-4998fb5f47168ecc385b39cc88f113d3.png?resize=752x",
           "profile_url": "https://cdn.dribbble.com/users/12698487/avatars/normal/32d08456769561af3be2335aea0b464c?1659716030"
       }
+    ],
+    "Users": [
+      {
+        "email": "Admin",
+        "password": "root"
+      }
     ]
 }
   

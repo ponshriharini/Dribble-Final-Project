@@ -1,0 +1,29 @@
+.auth-btn-light{
+    color: black;
+    background-color: white;
+    border: 1.5px solid rgb(240,240,241) !important;
+}
+
+.auth-btn-dark{
+    color: white;
+    background-color: rgb(14,13,35);
+}
+
+.auth-icon {
+    margin-right: 16px;
+    background-color: transparent !important;
+    color: transparent !important;
+}
+
+.auth-btn{
+    border-radius: 50px !important;
+    width: 97.5%;
+    padding: 17px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    margin-left: 5px;
+}

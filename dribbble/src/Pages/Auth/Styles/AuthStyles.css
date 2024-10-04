@@ -1,0 +1,113 @@
+.signup-main-container, .login-main-container {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: calc(100% - 500px);
+    background-color: #fff;
+    padding: 30px 60px 0px 60px;
+    margin-left: 100px;
+}
+
+.signup-content {
+    text-align: left;
+    max-width: 425px;
+    width: 100%;
+}
+
+.signup-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.login-title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+    margin-top: 4px;
+    color: #696969;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.separator:before,
+.separator:after {
+    content: "";
+    flex: 1;
+    border-bottom: 1.5px solid rgb(240,240,241);
+    margin: 0 16px;
+}
+
+.signup-terms {
+    font-size: 12px;
+    margin-top: 50px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.signup-terms a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.signup-footer, .login-footer {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.signup-footer a, .login-footer a {
+    color: #000;
+}
+
+.signup-footer a:hover {
+    text-decoration: underline;
+}
+
+.login-input-title{
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.login-form{
+    margin-top: 35px;
+}
+
+.password{
+    display: flex;
+}
+
+.forgot-password a{
+    color: black;
+    font-size: 14.5px;
+}
+
+.forgot-password{
+    margin-left: auto;
+}
+
+@media screen and (max-width: 950px) {
+    .signup-container {
+        width: 100% !important; 
+        justify-content: center;
+        padding: 10px;
+        margin: auto;
+    }
+}

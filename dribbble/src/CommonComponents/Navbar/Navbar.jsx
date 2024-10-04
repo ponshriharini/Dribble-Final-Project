@@ -101,10 +101,10 @@ function Navbar() {
                     </div>
 
                     <div className="user-actions">
-                        <a href="#" className="login-button">Log in</a>
+                        <a href="/login" className="login-button">Log in</a>
                         <div className="Button-Container">
                             <div className="Action-Button-Dark signup-button">
-                                Sign up
+                                <a href="/signup" className="signup">Sign up</a>
                             </div>
                         </div>
                     </div>
