@@ -2,9 +2,12 @@ import "./NavbarStyles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from "react";
+import { useContext } from "react";
+import { AuthContext } from "../../Contexts/AuthContext";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const { user, isLoggedIn } = useContext(AuthContext);
 
      // Use useEffect to handle screen resizing
      useEffect(() => {
@@ -100,7 +103,8 @@ function Navbar() {
                         </form>
                     </div>
 
-                    <div className="user-actions">
+                    {!isLoggedIn ?
+                        <div className="user-actions">
                         <a href="/login" className="login-button">Log in</a>
                         <div className="Button-Container">
                             <div className="Action-Button-Dark signup-button">
@@ -108,6 +112,12 @@ function Navbar() {
                             </div>
                         </div>
                     </div>
+                    :
+                    <div className="name-icon">
+                        {user[0]}
+                    </div>
+                    }
+                    
                 </div>
             </div>
 

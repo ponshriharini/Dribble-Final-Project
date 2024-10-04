@@ -235,6 +235,15 @@ hr{
     color: white !important;
 }
 
+.name-icon{
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #0d0c22;
+    color: white;
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 1400px) {
     .navbar {
         justify-content: space-between;

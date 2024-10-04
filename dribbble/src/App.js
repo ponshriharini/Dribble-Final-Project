@@ -8,18 +8,21 @@ import "./CommonComponents/FontStyles.css";
 import SignUpFront from './Pages/Auth/Components/SignUpFront';
 import Login from './Pages/Auth/Components/Login';
 import 'react-toastify/dist/ReactToastify.css';
+import { AuthProvider } from './Contexts/AuthContext';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Signup" element={<SignUpFront />} />
-          <Route path="/Login" element={<Login />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <AuthProvider>
+        <div className="App">
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/Signup" element={<SignUpFront />} />
+              <Route path="/Login" element={<Login />} />
+            </Routes>
+          </BrowserRouter>
+        </div>
+    </AuthProvider>
   );
 }
 

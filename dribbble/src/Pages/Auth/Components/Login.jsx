@@ -5,12 +5,16 @@ import "../Styles/AuthStyles.css";
 import InputBox from "./InputBox";
 import { toast, ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../../Contexts/AuthContext";
+import { useContext } from "react";
 
 function Login() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [users, setUsers] = useState([]);
+
+  const { setIsLoggedIn, setUser } = useContext(AuthContext);
 
   const Navigate = useNavigate();
 
@@ -30,6 +34,8 @@ function Login() {
 
     if (user) {
         toast.success('Login success');
+        setIsLoggedIn(true);
+        setUser(email);
         setTimeout(() => {
             Navigate("/"); 
         }, 4000);
