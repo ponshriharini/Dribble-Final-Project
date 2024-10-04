@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import "./CommonComponents/FontStyles.css";
 import SignUpFront from './Pages/Auth/Components/SignUpFront';
 import Login from './Pages/Auth/Components/Login';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
