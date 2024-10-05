@@ -11,6 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { AuthProvider } from './Contexts/AuthContext';
 import UserFeed from './Pages/UserFeed/Components/UserFeed';
 import ProtectedRoute from './Components/Routing/ProtectedRoute';
+import ProfileLikedPosts from './Pages/Profile/Components/ProfileLikedPosts';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
               <Route path="/Signup" element={<SignUpFront />} />
               <Route path="/Login" element={<Login />} />
               <Route path="/UserFeed" element={<ProtectedRoute><UserFeed /></ProtectedRoute>} />
+              <Route path="*" element={<Home />} />
+              <Route path="/Profile/LikedShots" element={<ProtectedRoute><ProfileLikedPosts /></ProtectedRoute>} ></Route>
             </Routes>
           </BrowserRouter>
         </div>

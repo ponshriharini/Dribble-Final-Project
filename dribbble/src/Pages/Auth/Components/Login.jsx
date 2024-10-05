@@ -35,7 +35,7 @@ function Login() {
 
     if (user) {
         setIsLoggedIn(true);
-        setUser(email);
+        setUser(user);
         Navigate("/UserFeed"); 
     } else {
       toast.error("Invalid credentials");

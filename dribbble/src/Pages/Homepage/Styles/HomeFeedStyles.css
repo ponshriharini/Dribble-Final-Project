@@ -1,27 +1,27 @@
-.feed-container{
+.feed-container {
     background-color: white;
 }
 
-.home-feed-header{
+.home-feed-header {
     padding-top: 33px;
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
 }
 
-.feed-browse-more{
+.feed-browse-more {
     text-align: center;
     padding-bottom: 150px;
     margin-bottom: 0px !important;
 }
 
-.hover-svg-fill{
+.hover-svg-fill {
     color: rgb(241, 71, 136) !important;
     fill: rgb(241, 71, 136);
 }
 
-.hover-fill{
+.hover-fill {
     fill: rgb(0, 0, 0);
-} 
+}
 
 .home-feed-title {
     font-size: 49px;
@@ -30,11 +30,11 @@
     font-weight: 400;
 }
 
-.home-feed-header h2{
+.home-feed-header h2 {
     margin: 0;
 }
 
-.feed-browse-more{
+.feed-browse-more {
     margin-top: 48px;
     margin-bottom: 20px;
 }
@@ -50,20 +50,28 @@
 }
 
 .feed-card-container {
+    flex: 1 1 23%; /* Take up 23% of the available width */
+    max-width: 312px;
+    min-width: 200px; 
     display: inline-block;
-    margin: 18px;
+    margin: 10px;
     text-align: left;
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     position: relative;
 }
 
-.feed-card-image{
-    min-width: 100px;
-    max-width: 312px;
-    width: auto;
+.feed-card-image {
+    width: 100%;
     height: 235px;
-    min-height: 100px;
     position: relative;
+}
+
+.feed-card-image img, .feed-card-image video {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: 0;
 }
 
 /* Start of Card Overlay - Like and Save */
@@ -84,9 +92,9 @@
     width: 100%;
     height: 80px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
     transition: opacity 0.3s ease;
-    border-radius: 0 0 8px 8px; /* Ensure the gradient follows the border radius */
+    border-radius: 0 0 8px 8px; 
 }
 
 .overlay-text {
@@ -110,7 +118,7 @@
     right: 25px;
     display: flex;
     gap: 10px;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
     transform: translateY(20px); /* Position outside the view */
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -148,16 +156,7 @@
     background: linear-gradient(transparent, rgba(0, 0, 0, 1));
     opacity: 0.05;
     z-index: 1;
-    border-radius: 8px; /* Make the gradient follow the border radius */
-    pointer-events: none; /* Prevent the gradient from blocking clicks */
-}
-
-.feed-card-image img, .feed-card-image video {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-    margin: 0;
+    border-radius: 8px; 
 }
 
 .feed-card-details {
@@ -172,7 +171,7 @@
     border-radius: 50%;
 }
 
-.avatar:hover{
+.avatar:hover {
     cursor: pointer;
 }
 
@@ -180,14 +179,13 @@
     font-size: 14px;
     font-weight: 500;
     margin-left: 8px;
-
-    white-space: nowrap; /* Prevents text from wrapping to the next line */
-    overflow: hidden; /* Hides any overflowing text */
+    white-space: nowrap; 
+    overflow: hidden; 
     text-overflow: ellipsis; /* Displays ellipsis (...) for overflowing text */
-    max-width: 110px; /* Set a maximum width to limit how much text is displayed */
+    max-width: 110px; 
 }
 
-.name:hover{
+.name:hover {
     cursor: pointer;
 }
 
@@ -202,7 +200,7 @@
     margin-right: auto;
 }
 
-.pro-badge:hover{
+.pro-badge:hover {
     background-color: rgb(0, 0, 0);
     cursor: pointer;
 }
@@ -215,8 +213,9 @@
     color: #4d4d4d;
 }
 
-.likes{
+.likes {
     margin-right: 8px;
+    margin-left: 8px;
 }
 
 .likes svg, .views svg {
@@ -224,38 +223,43 @@
     color: rgb(159,159,167);
 }
 
-.likes svg:hover{
+.likes svg:hover {
     color: rgb(231, 93, 146);
     fill: rgb(231, 93, 146);
     cursor: pointer;
 }
 
-.feed-cards-container{
-    margin: 0px 55px;
-    text-align: center;
+.feed-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px;
+    padding: 0px 32px;
 }
 
 @media screen and (max-width: 1200px) {
-    .feed-cards-container{
-        padding: 0px 72px !important;
-    }    
+    .feed-card-container {
+        flex: 1 1 calc(50% - 20px); /* Take up half of the available width with space */
+    }
 }
 
-@media screen and (max-width: 768px){
-    .feed-cards-container{
-        padding: 0px 32px !important;
-    }    
-}
+@media screen and (max-width: 768px) {
+    .feed-card-container {
+        flex: 1 1 calc(100% - 20px);
+    }
 
-@media screen and (max-width: 520px) {
-    .feed-cards-container{
-        margin: 0px !important;
-        padding: 10px !important;
+    .feed-cards-container {
+        padding: 0px 16px; 
     }
 }
 
 @media screen and (max-width: 520px) {
-    .feed-cards-container{
-        padding: 0px !important;
+    .feed-card-container {
+        flex: 1 1 100%; /* Full width with no margin */
+        margin: 0 0 16px 0; 
+    }
+
+    .feed-cards-container {
+        padding: 0 8px; 
     }
 }

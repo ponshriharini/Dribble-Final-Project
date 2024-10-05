@@ -26,12 +26,14 @@ function FeedCard({ feed }) {
                 videoElement.pause();
             }, 1000); 
 
-            checkIfLiked();
-            CheckIfSaved();
-
             return () => clearTimeout(timeoutId);
         }
     }, [feed.source_url]);
+
+    useEffect(() => {
+        checkIfLiked();
+        CheckIfSaved();
+    }, []);
 
     const checkIfLiked = () => {
         if (Likes.includes(feed.id)) {
@@ -45,8 +47,10 @@ function FeedCard({ feed }) {
         } else {
             setIsLiked(!isLiked);
             if (!isLiked) {
+                console.log("hello");
                 setLikes((prevLikes) => [...prevLikes, feed.id]);
             } else {
+                console.log("bye");
                 setLikes((prevLikes) => prevLikes.filter((id) => id !== feed.id));
             }
         }

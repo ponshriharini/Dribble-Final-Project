@@ -20,7 +20,7 @@ function Home() {
         }
     }, []);
 
-    return ( 
+    return (  
         <div>
             <Navbar className={"peach-bg-nav"} />
             <Header />

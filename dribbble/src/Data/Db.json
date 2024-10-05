@@ -330,7 +330,9 @@
     "Users": [
       {
         "email": "Admin",
-        "password": "root"
+        "password": "root",
+        "country": "India",
+        "AccountType": "LIMITED ACCOUNT"
       }
     ]
 }

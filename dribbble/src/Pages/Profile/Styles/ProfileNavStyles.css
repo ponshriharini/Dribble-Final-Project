@@ -1,0 +1,10 @@
+.profile-nav-bar{
+    padding: 30px 55px 30px 55px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.nav-link{
+    color: black !important;
+}

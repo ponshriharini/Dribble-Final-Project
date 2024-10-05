@@ -5,10 +5,13 @@ import { useState, useEffect } from "react";
 import { useContext } from "react";
 import { AuthContext } from "../../Contexts/AuthContext";
 import NameIcon from "../Icons/NameIcon";
+import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Navbar({className}) {
     const [menuOpen, setMenuOpen] = useState(false);
     const { user, isLoggedIn, setIsLoggedIn } = useContext(AuthContext);
+    const Navigate = useNavigate();
 
      // Use useEffect to handle screen resizing
      useEffect(() => {
@@ -40,6 +43,10 @@ function Navbar({className}) {
 
     const SignOut = () => {
         setIsLoggedIn(false);
+    }
+
+    const goToProfile = () => {
+        Navigate("/Profile/LikedShots");
     }
 
     return ( 
@@ -121,14 +128,16 @@ function Navbar({className}) {
                         :
                         <div className="dropdown">
                             <div className="dropdown-link">
-                                <a href="#"> <div className="name-icon">{user[0]} </div> </a>
+                                <a href="#"> <div className="name-icon" onClick={() => goToProfile()}>{user.email[0]} </div> </a>
                             </div>
                             <div className="dropdown-options-container name-dropdown-container">
                                 <div className="dropdown-options name-dropdown">
 
-                                    <NameIcon user={user} />
-
-                                    <p className="name-header">{user}</p>
+                                    <div className="name-header">
+                                        { user && <NameIcon user={user.email[0]} /> }
+                                    </div>
+                                    
+                                    <p className="name-header">{user.email}</p>
                                     
                                     <a href="#">
                                         <p className="name-dropdown-header">Upload Design Work</p>
@@ -166,7 +175,7 @@ function Navbar({className}) {
                         <a href="#">Jobs</a>
                         <a href="#">Go Pro</a>
                         <hr className="menu-content-hr" />
-                        {!isLoggedIn ? <a href="#">Log in</a> : <a href="#">Log out</a>}
+                        {!isLoggedIn && <a href="/login">Log in</a>}
                     </div>
             </div>
         </div>

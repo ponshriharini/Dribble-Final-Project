@@ -1,13 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import "./NameIconStyles.css";
 
 function NameIcon({user}) {
 
+    const Navigate = useNavigate();
+
     const goToProfile = () => {
-        window.location.href = "/profile";
+        Navigate("/Profile/LikedShots");
     }
 
     return ( 
-        <div className="name-icon-dropdown" onClick={() => goToProfile()}>{user[0]}</div>
+        <div className="name-icon-dropdown" onClick={() => goToProfile()}>{user}</div>
      );
 }
 

@@ -143,6 +143,13 @@
     background-color: white;
     padding: 10px 35px;
     border-radius: 20px;
+    border: 1px solid #eaeaea;
+}
+
+.name-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dropdown-options p{
