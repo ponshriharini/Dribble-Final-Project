@@ -1,0 +1,16 @@
+.load-button{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.load-button-text{
+    text-decoration: none;
+    color: #0d0c22;
+    background-color: rgb(248,247,243);
+    padding: 13px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 13.5px;
+    cursor: pointer;
+}

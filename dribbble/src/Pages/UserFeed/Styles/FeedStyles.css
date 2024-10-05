@@ -1,0 +1,136 @@
+.user-feed-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 0px 4%;
+    background-color: white;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-radius: 24px;
+    position: relative;
+    max-width: 100%; 
+    box-sizing: border-box; 
+    overflow: hidden; 
+  }
+  
+  .nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-btn {
+    border-radius: 24px;
+  }
+
+  .search-form, .search-form input{
+    background-color: rgb(245,244,250);
+  }
+  
+  .dropdown-btn, .filter-btn {
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #0d0c22;
+  }
+  
+  .dropdown-btn {
+    border-radius: 10px;
+  }
+  
+  .nav-center-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-grow: 1;
+    justify-content: center;
+    max-width: 100%; 
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .nav-center {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;  
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    max-width: calc(100% - 160px); /* Adjust max-width based on left/right elements */
+    box-sizing: border-box;
+  }
+  
+  .nav-center a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #0d0c22;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .nav-center a:hover {
+    color: #000;
+  }
+  
+  .nav-arrow-left, .nav-arrow-right {
+    display: none; 
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 10;
+    margin: 10px;
+  }
+  
+  .nav-arrow-left {
+    margin-right: 8px;
+  }
+  
+  .nav-arrow-right {
+    margin-left: 8px;
+  }
+  
+  .nav-center::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-link{
+    padding: 5px 15px;
+  }
+
+  .active{
+    background-color: rgb(248,247,243);
+    border-radius: 20px;
+  }
+  
+  @media screen and (max-width: 1450px) {
+    .nav-center-container {
+      flex-grow: 1;
+      justify-content: center;
+    }
+  
+    .nav-center {
+      max-width: 800px;
+      margin: 0px 10px;
+    }
+  
+    .nav-arrow-left, .nav-arrow-right {
+      display: flex; 
+    }
+  }
+  
+@media screen and (max-width: 800px) {
+    .user-feed-nav {
+        display: block;
+    }
+
+    .user-feed-nav .nav-left, .user-feed-nav .nav-right {
+        margin: 20px;
+        justify-content: center;
+    }
+}

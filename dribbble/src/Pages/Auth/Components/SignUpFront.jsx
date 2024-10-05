@@ -25,7 +25,7 @@ function SignUp() {
                     </div>
 
                     <div className="signup-footer">
-                        Already have an account? <a href="#">Sign In</a>
+                        Already have an account? <a href="/login">Sign In</a>
                     </div>
                 </div>
         </div>

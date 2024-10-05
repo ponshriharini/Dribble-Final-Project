@@ -1,22 +1,23 @@
 import React, { useState, useEffect, useRef } from "react";
 import ProfileCard from "./ProfileCard";
 import "../Styles/ProfileCarouselStyles.css";
+import { BASE_URL } from "../../../Config";
 
 function ProfileCarousel() {
     const [profiles, setProfiles] = useState([]);
     const carouselRef = useRef(null);
 
     useEffect(() => {
-        fetch("http://localhost:8000/profiles")
+        fetch(BASE_URL + "/profiles")
             .then((response) => response.json())
             .then((data) => {
-                setProfiles([...data, ...data]); // Duplicating profiles to create an infinite effect
+                // Duplicating profiles to create an infinite effect
+                setProfiles([...data, ...data]); 
             });
 
-        // Create a smooth auto-scroll effect
+
         const scrollAmount = 1; // Scroll step (increase to scroll faster)
-        const intervalTime = 20; // Scroll interval (reduce to make it smoother)
-        // Scroll smoothly by a larger step (1px) every 20ms
+        const intervalTime = 20; // Scroll interval (reduce to make it smoother) in ms
         
         const scrollInterval = setInterval(() => {
             if (carouselRef.current) {
@@ -30,7 +31,6 @@ function ProfileCarousel() {
             }
         }, intervalTime);
 
-        // Cleanup the interval on component unmount
         return () => clearInterval(scrollInterval);
     }, []);
 

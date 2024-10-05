@@ -1,9 +1,20 @@
 import React from 'react';
 import { useEffect, useRef } from 'react';
+import { useContext } from 'react';
+import { AuthContext } from '../../../Contexts/AuthContext';
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 function FeedCard({ feed }) {
 
     const videoRef = useRef(null);
+
+    const [isLiked, setIsLiked] = useState(false);
+    const [isSaved, setIsSaved] = useState(false);
+
+    const { isLoggedIn, Likes, setLikes, Saved, setSaved } = useContext(AuthContext);
+
+    const Navigate = useNavigate();
 
     // Play video for 1 second and then pause
     useEffect(() => {
@@ -15,10 +26,51 @@ function FeedCard({ feed }) {
                 videoElement.pause();
             }, 1000); 
 
-            // Cleanup the timeout if the component is unmounted
+            checkIfLiked();
+            CheckIfSaved();
+
             return () => clearTimeout(timeoutId);
         }
     }, [feed.source_url]);
+
+    const checkIfLiked = () => {
+        if (Likes.includes(feed.id)) {
+            setIsLiked(true);
+        }
+    };
+
+    const handleLikeClick = () => {
+        if (!isLoggedIn) {
+            Navigate("/Login");
+        } else {
+            setIsLiked(!isLiked);
+            if (!isLiked) {
+                setLikes((prevLikes) => [...prevLikes, feed.id]);
+            } else {
+                setLikes((prevLikes) => prevLikes.filter((id) => id !== feed.id));
+            }
+        }
+    };
+
+    const CheckIfSaved = () => {
+        if (Saved.includes(feed.id)) {
+            setIsSaved(true);
+        }
+    };
+
+    const handleSaveClick = () => {
+        if (!isLoggedIn) {
+            Navigate("/Login");
+        } else {
+            setIsSaved(!isSaved);
+            if (!isSaved) {
+                setSaved((prevSaved) => [...prevSaved, feed.id]);
+            } else {
+                setSaved((prevSaved) => prevSaved.filter((id) => id !== feed.id));
+            }
+        }
+    };
+
 
     return (
         <div className="feed-card-container">
@@ -47,15 +99,15 @@ function FeedCard({ feed }) {
                     </div>
                         
                     <div className="action-buttons">
-                        <button className="save-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" role="img" className="icon ">
-                            <path d="M3.33337 5.2C3.33337 4.0799 3.33337 3.51984 3.55136 3.09202C3.74311 2.71569 4.04907 2.40973 4.42539 2.21799C4.85322 2 5.41327 2 6.53337 2H9.46671C10.5868 2 11.1469 2 11.5747 2.21799C11.951 2.40973 12.257 2.71569 12.4487 3.09202C12.6667 3.51984 12.6667 4.0799 12.6667 5.2V14L8.00004 11.3333L3.33337 14V5.2Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
-                        </svg>                    
+                        <button className="save-button" onClick={() => handleSaveClick()}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" role="img" className={`icon  ${isSaved && "hover-fill"}`}>
+                                <path d="M3.33337 5.2C3.33337 4.0799 3.33337 3.51984 3.55136 3.09202C3.74311 2.71569 4.04907 2.40973 4.42539 2.21799C4.85322 2 5.41327 2 6.53337 2H9.46671C10.5868 2 11.1469 2 11.5747 2.21799C11.951 2.40973 12.257 2.71569 12.4487 3.09202C12.6667 3.51984 12.6667 4.0799 12.6667 5.2V14L8.00004 11.3333L3.33337 14V5.2Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+                            </svg>                    
                         </button>
-                        <button className="like-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" role="img" className="icon ">
-                            <path d="M10.7408 2C13.0889 2 14.6667 4.235 14.6667 6.32C14.6667 10.5425 8.11856 14 8.00004 14C7.88152 14 1.33337 10.5425 1.33337 6.32C1.33337 4.235 2.91115 2 5.2593 2C6.60745 2 7.48893 2.6825 8.00004 3.2825C8.51115 2.6825 9.39263 2 10.7408 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
-                        </svg>                    
+                        <button className="like-button" onClick={() => handleLikeClick()}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" role="img" className={`icon ${isLiked && "hover-fill"} `} >
+                                <path d="M10.7408 2C13.0889 2 14.6667 4.235 14.6667 6.32C14.6667 10.5425 8.11856 14 8.00004 14C7.88152 14 1.33337 10.5425 1.33337 6.32C1.33337 4.235 2.91115 2 5.2593 2C6.60745 2 7.48893 2.6825 8.00004 3.2825C8.51115 2.6825 9.39263 2 10.7408 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+                            </svg>                    
                         </button>
                     </div>
                 </div>
@@ -66,7 +118,7 @@ function FeedCard({ feed }) {
                 <span className="name">{feed.name}</span>
                 <span className="pro-badge">{feed.pro_or_team}</span>
                 <span className="likes">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="rgb(159,159,167)" role="img" className="icon fill-current shot-tools-icon">
+                <svg onClick={() => handleLikeClick()} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="rgb(159,159,167)" role="img" className={`icon fill-current shot-tools-icon ${isLiked && "hover-svg-fill"}`}>
                     <path d="M10.7408 2C13.0889 2 14.6667 4.235 14.6667 6.32C14.6667 10.5425 8.11856 14 8.00004 14C7.88152 14 1.33337 10.5425 1.33337 6.32C1.33337 4.235 2.91115 2 5.2593 2C6.60745 2 7.48893 2.6825 8.00004 3.2825C8.51115 2.6825 9.39263 2 10.7408 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                 </svg>
                     {feed.like_count}

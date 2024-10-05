@@ -1,3 +1,4 @@
+import { BASE_URL } from "../../../Config";
 import "../Styles/FooterCarouselStyles.css";
 import FooterCarouselCard from "./FooterCarouselCard";
 import React, { useState, useEffect, useRef } from "react";
@@ -8,7 +9,7 @@ function FooterCarousel() {
     const scrollIntervalRef = useRef(null);
 
     useEffect(() => {
-        fetch("http://localhost:8000/designs")
+        fetch(BASE_URL + "/designs")
             .then((response) => response.json())
             .then((data) => {
                 setDesigns([...data, ...data]); 

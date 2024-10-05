@@ -7,6 +7,7 @@ import { toast, ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthContext";
 import { useContext } from "react";
+import { BASE_URL } from "../../../Config";
 
 function Login() {
 
@@ -19,7 +20,7 @@ function Login() {
   const Navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:8000/Users")
+    fetch(BASE_URL+ "/Users")
             .then((response) => response.json())
             .then((data) => {
             setUsers(data); 
@@ -33,12 +34,9 @@ function Login() {
     );
 
     if (user) {
-        toast.success('Login success');
         setIsLoggedIn(true);
         setUser(email);
-        setTimeout(() => {
-            Navigate("/"); 
-        }, 4000);
+        Navigate("/UserFeed"); 
     } else {
       toast.error("Invalid credentials");
     }

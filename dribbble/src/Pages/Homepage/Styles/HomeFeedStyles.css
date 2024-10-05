@@ -1,17 +1,37 @@
-.home-feed-main-container {
-    padding-top: 33px;
-    padding-bottom: 150px;
-    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-align: center;
+.feed-container{
     background-color: white;
 }
+
+.home-feed-header{
+    padding-top: 33px;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.feed-browse-more{
+    text-align: center;
+    padding-bottom: 150px;
+    margin-bottom: 0px !important;
+}
+
+.hover-svg-fill{
+    color: rgb(241, 71, 136) !important;
+    fill: rgb(241, 71, 136);
+}
+
+.hover-fill{
+    fill: rgb(0, 0, 0);
+} 
 
 .home-feed-title {
     font-size: 49px;
     line-height: 56px;
-    padding: 0px 32px;
-    margin-bottom: 30px;
+    padding: 0px 32px 30px 32px;
     font-weight: 400;
+}
+
+.home-feed-header h2{
+    margin: 0;
 }
 
 .feed-browse-more{
@@ -212,6 +232,7 @@
 
 .feed-cards-container{
     margin: 0px 55px;
+    text-align: center;
 }
 
 @media screen and (max-width: 1200px) {

@@ -3,7 +3,14 @@
     height: 100px;
     display: flex;
     align-items: center;
-    background-color: rgb(249,246,243) !important;
+}
+
+.peach-bg-nav{
+    background-color: rgb(249,246,243);
+}
+
+.white-bg-nav{
+    background-color: white;
 }
 
 .navbar-container a{
@@ -50,11 +57,18 @@
     color: rgb(110,108,123);
     font-weight: 100;
     padding: 0px 15px 0px 25px;
-    background-color: white;
     border-radius: 30px;
-    border: 4px solid transparent; /* Default Border */
+    border: 4px solid transparent; 
     box-sizing: border-box;
     transition: border 0.3s ease; /* Transition for border to make it appear and disappear slowly */
+}
+
+.peach-bg-nav .search-form, .peach-bg-nav .search-form input{
+    background-color: white;
+}
+
+.white-bg-nav .search-form, .white-bg-nav .search-form input{
+    background-color: rgb(245,244,250);
 }
 
 .search-form:hover{
@@ -113,6 +127,16 @@
     padding-top: 30px;
     z-index: 1000;
     min-width: 270px;
+}
+
+.name-dropdown-container{
+    top: 80px;
+    left: -200px !important;
+}
+
+.name-dropdown{
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
 }
 
 .dropdown-options{
@@ -209,7 +233,6 @@ hr{
 }
 
 /* Overlay for dimming the background */
-/* Dims everything */
 .overlay {
     display: none;
     position: fixed;
@@ -217,9 +240,8 @@ hr{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Light overlay */
-    z-index: 900; /* Lower than navbar-container and menu */
-    pointer-events: none; /* Makes the overlay non-clickable */
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 900; 
 }
 
 /* keeps these above the overlay */
@@ -242,6 +264,22 @@ hr{
     background-color: #0d0c22;
     color: white;
     border-radius: 50%;
+}
+
+.name-header{
+    text-align: center;
+    font-weight: 700;
+}
+
+.name-dropdown-header{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 0px;
+    line-height: 1;
+}
+
+.name-dropdown-container hr{
+    margin: 0;
 }
 
 @media screen and (max-width: 1400px) {
@@ -283,7 +321,7 @@ hr{
     }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1005px) {
     .overlay {
         display: block;
     }
@@ -380,5 +418,13 @@ hr{
     .navbar-container{
         padding-right: 0px !important;
         transition: 0.3s ease;
+    }
+
+    .name-icon{
+        margin-right: 0px;
+    }
+
+    .dropdown-link{
+        margin-right: 10px;
     }
 }
