@@ -9,7 +9,7 @@ function Profile() {
     const { user } = useContext(AuthContext);
 
     return ( 
-        <div className="profile-container">
+        <div className="profile-main-container">
             <div className="profile-header">
                 { user && user.email && <NameIcon user={user.email[0]} /> }
             </div>
