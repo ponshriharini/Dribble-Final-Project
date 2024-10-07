@@ -1,7 +1,8 @@
-import { BASE_URL } from "../../../Config";
+import { getDesignData } from "../../../Axios/axios";
 import "../Styles/FooterCarouselStyles.css";
 import FooterCarouselCard from "./FooterCarouselCard";
 import React, { useState, useEffect, useRef } from "react";
+import { getFeedData } from "../../../Axios/axios";
 
 function FooterCarousel() {
     const [designs, setDesigns] = useState([]);
@@ -9,11 +10,14 @@ function FooterCarousel() {
     const scrollIntervalRef = useRef(null);
 
     useEffect(() => {
-        fetch(BASE_URL + "/designs")
-            .then((response) => response.json())
-            .then((data) => {
-                setDesigns([...data, ...data]); 
-            });
+
+        getDesignData()
+        .then((response) => {
+            setDesigns(response.data); 
+        })
+        .catch((error) => {
+            console.error('Error fetching Design data:', error);
+        });
 
         // Function to start the auto-scroll
         const startAutoScroll = () => {

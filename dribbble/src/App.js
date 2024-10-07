@@ -4,7 +4,7 @@ import { Routes } from 'react-router-dom';
 import Home from "./Pages/Homepage/Components/Home";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import "./Components/FontStyles.css";
+import "./Fonts/FontStyles.css";
 import SignUpFront from './Pages/Auth/Components/SignUpFront';
 import Login from './Pages/Auth/Components/Login';
 import 'react-toastify/dist/ReactToastify.css';

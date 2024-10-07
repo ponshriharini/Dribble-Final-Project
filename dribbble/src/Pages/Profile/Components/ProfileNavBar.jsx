@@ -6,11 +6,6 @@ function ProfileNavBar() {
     const navigate = useNavigate(); 
     const [activeLink, setActiveLink] = useState("LikedShots"); 
 
-    const goToLikesShots = () => {
-        setActiveLink("LikedShots"); 
-        navigate("/Profile/LikedShots");
-    };
-
     const handleNavClick = (linkName, path) => {
         setActiveLink(linkName); 
         navigate(path); 

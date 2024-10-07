@@ -1,19 +1,21 @@
 import React, { useState, useEffect, useRef } from "react";
 import ProfileCard from "./ProfileCard";
 import "../Styles/ProfileCarouselStyles.css";
-import { BASE_URL } from "../../../Config";
+import { getProfileData } from "../../../Axios/axios";
 
 function ProfileCarousel() {
     const [profiles, setProfiles] = useState([]);
     const carouselRef = useRef(null);
 
     useEffect(() => {
-        fetch(BASE_URL + "/profiles")
-            .then((response) => response.json())
-            .then((data) => {
-                // Duplicating profiles to create an infinite effect
-                setProfiles([...data, ...data]); 
-            });
+
+        getProfileData()
+        .then((response) => {
+            setProfiles(response.data); 
+        })
+        .catch((error) => {
+            console.error('Error fetching Profile data:', error);
+        });
 
 
         const scrollAmount = 1; // Scroll step (increase to scroll faster)

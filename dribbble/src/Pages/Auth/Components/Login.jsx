@@ -7,7 +7,7 @@ import { toast, ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthContext";
 import { useContext } from "react";
-import { BASE_URL } from "../../../Config";
+import { getUsers } from "../../../Axios/axios";
 
 function Login() {
 
@@ -20,11 +20,15 @@ function Login() {
   const Navigate = useNavigate();
 
   useEffect(() => {
-    fetch(BASE_URL+ "/Users")
-            .then((response) => response.json())
-            .then((data) => {
-            setUsers(data); 
-    });
+
+      getUsers()
+      .then((response) => {
+        setUsers(response.data); 
+      })
+      .catch((error) => {
+        console.error('Error fetching users:', error);
+      });
+
   }, []);
 
   const handleSubmit = (e) => {

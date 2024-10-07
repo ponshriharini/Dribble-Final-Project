@@ -1,17 +1,21 @@
-import { BASE_URL } from "../../../Config";
 import "../Styles/HomeFeedStyles.css";
 import FeedCard from "./FeedCard";
 import { useState, useEffect } from "react";
+import { getFeedData } from "../../../Axios/axios";
 
 function FeedCards() {
     const [feed, setFeeds] = useState([]);
 
     useEffect(() => {
-        fetch(BASE_URL + "/feed")
-            .then((response) => response.json())
-            .then((data) => {
-                setFeeds([...data]); 
-            });
+
+        getFeedData()
+        .then((response) => {
+            setFeeds(response.data); 
+        })
+        .catch((error) => {
+            console.error('Error fetching feed data:', error);
+        });
+
     }, []);
 
     return ( 

@@ -59,6 +59,7 @@ function UserFeedNav() {
     <div className="user-feed-nav">
       <div className="nav-left">
         <button className="dropdown-btn">Following <FontAwesomeIcon icon={faAngleDown} className="dropdown-arrow ms-2"/></button>
+
       </div>
 
       <div className="nav-center-container">
